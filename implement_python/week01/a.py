@@ -2,8 +2,8 @@ def CostFunction(X, y, theta):
     # 目的関数
     J = 0
     m = 8
-    for x in X:
-        J += ((theta[0] + x*theta[1]) - y)**2
+    for i, x in enumerate(X):
+        J += ((theta[0] + x*theta[1]) - y[i])*((theta[0] + x*theta[1]) - y[i])
     J = J/(2*m)
 
     return J
@@ -11,7 +11,6 @@ def CostFunction(X, y, theta):
 
 def GradientDescent(X, y, theta, alpha):
     # 最急降下法/勾配降下法
-
     # シータの更新
     temp0 = theta[0] - alpha*2*CostFunction(X, y, theta)
     temp1 = theta[1] - alpha*2*CostFunction(X, y, theta)
