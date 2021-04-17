@@ -9,7 +9,8 @@
     - [Introduction](#introduction)
         - [What is Machine Learing](#what-is-machine-learing)
             - [Machine Learning difinition:](#machine-learning-difinition)
-        - [Supervised Learning (教師あり学習)](#supervised-learning-教師あり学習)
+            - [Supervised Learning (教師あり学習)](#supervised-learning-教師あり学習)
+            - [Unsupervised Learning (教師なし学習)](#unsupervised-learning-教師なし学習)
     - [Linear Regression with One Variable](#linear-regression-with-one-variable)
         - [Model and Cost Function](#model-and-cost-function)
         - [Parameter Learning](#parameter-learning)
@@ -94,19 +95,29 @@ P = the probability that the program will win the next game.
 In general, any machine learning problem can be assigned to one of two broad classifications: Supervised learning and Unsupervised learning.
 
 <a id="markdown-supervised-learning-教師あり学習" name="supervised-learning-教師あり学習"></a>
-### Supervised Learning (教師あり学習)
+#### Supervised Learning (教師あり学習)
 right answers given
-Regression (回帰):Predict continuous valued output
-統計学において、Y が連続値の時にデータに Y = f(X) というモデル(「定量的な関係の構造」)を当てはめる事。
-classification (分類):
+* Regression (回帰):Predict continuous valued output
+Y = f(X) というモデルの時にYが連続である
+* classification (分類):Discrete valued output 
+Y = f(X) というモデルの時にYが離散（とびとび）である
+(例)  
+Regression - Given a picture of a person, we have to predict their age on the basis of the given picture  
+Classification - Given a patient with a tumor, we have to predict whether the tumor is malignant or benign. 
 
+<a id="markdown-unsupervised-learning-教師なし学習" name="unsupervised-learning-教師なし学習"></a>
+#### Unsupervised Learning (教師なし学習)
+right answers 'not' given
+ 
+* Clustering: Take a collection of 1,000,000 different genes, and find a way to automatically group these genes into groups that are somehow similar or related by different variables, such as lifespan, location, roles, and so on.
+
+* Non-clustering: The "Cocktail Party Algorithm", allows you to find structure in a chaotic environment. (i.e. identifying individual voices and music from a mesh of sounds at a cocktail party).
 
 <a id="markdown-linear-regression-with-one-variable" name="linear-regression-with-one-variable"></a>
 ## Linear Regression with One Variable
-
-
 <a id="markdown-model-and-cost-function" name="model-and-cost-function"></a>
 ### Model and Cost Function
+ここから
 <a id="markdown-parameter-learning" name="parameter-learning"></a>
 ### Parameter Learning
 
