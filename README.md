@@ -12,7 +12,7 @@
             - [Supervised Learning (教師あり学習)](#supervised-learning-教師あり学習)
             - [Unsupervised Learning (教師なし学習)](#unsupervised-learning-教師なし学習)
     - [Linear Regression with One Variable (線形回帰,線形回帰)](#linear-regression-with-one-variable-線形回帰線形回帰)
-        - [Model and Cost Function(目的関数)](#model-and-cost-function目的関数)
+        - [Model](#model)
         - [Parameter Learning](#parameter-learning)
             - [Gradient decent](#gradient-decent)
             - [Gradient decentの動き](#gradient-decentの動き)
@@ -120,8 +120,8 @@ right answers 'not' given
 * この講義で用いられる用語
 ![](./img/README_2021-04-18-13-53-07.png) 
  
-<a id="markdown-model-and-cost-function目的関数" name="model-and-cost-function目的関数"></a>
-### Model and Cost Function(目的関数)
+<a id="markdown-model" name="model"></a>
+### Model
 ![](./img/README_2021-04-18-14-00-23.png)  
 When the target variable that we’re trying to predict is continuous, such as in our housing example, we call the learning problem a regression problem. When y can take on only a small number of discrete values (such as if, given the living area, we wanted to predict if a dwelling is a house or an apartment, say), we call it a classification problem.  
 * Hypothesis Function(仮説関数):yの値を予想してくれる関数のこと。  
@@ -141,7 +141,7 @@ When the target variable that we’re trying to predict is continuous, such as i
 ### Parameter Learning
 <a id="markdown-gradient-decent" name="gradient-decent"></a>
 #### Gradient decent
-Gradient decent(最急降下法,勾配降下法)というアルゴリズムを用いて目的化関数を最小化(θの更新)する。（線形回帰以外でも使われる）  
+Gradient decent(最急降下法,勾配降下法)というアルゴリズムを用いて目的化関数を最小化(θの更新)する。（線形回帰以外でも使われる）(これから紹介するアルゴリズムは、Batch Gradient Decentと呼ばれる場合もある（θを更新するときに全てのデータセットをみるから))  
 ![](./img/README_2021-04-18-15-15-55.png)  
 ![](./img/README_2021-04-18-15-28-01.png)  
 ![](./img/README_2021-04-18-15-22-36.png)  
@@ -155,8 +155,6 @@ Gradient decent(最急降下法,勾配降下法)というアルゴリズムを�
 <a id="markdown-gradient-decentの動き" name="gradient-decentの動き"></a>
 #### Gradient decentの動き
 ![](./img/README_2021-04-18-15-52-21.png)  
-
-
 
 <a id="markdown-linear-algebra-review" name="linear-algebra-review"></a>
 ## Linear Algebra Review
