@@ -285,6 +285,7 @@ A_invA = inv(A)*A
 
 <a id="markdown-week-2" name="week-2"></a>
 # WEEK 2
+ここから
 <a id="markdown-linear-regression-with-multiple-variables" name="linear-regression-with-multiple-variables"></a>
 ## Linear Regression with Multiple Variables
 <a id="markdown-multivavariate-linear-regression" name="multivavariate-linear-regression"></a>
