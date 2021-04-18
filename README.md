@@ -130,7 +130,7 @@ When the target variable that we’re trying to predict is continuous, such as i
 
 * 仮説関数と目的関数の関係(分かりやすくするために仮説関数のパラメーターを一つにした)  
 ![](./img/README_2021-04-18-14-26-14.png)  
-パラメーターが2つの場合
+パラメーターが2つの場合  
 ![](./img/README_2021-04-18-14-29-12.png)  
 ![](./img/README_2021-04-18-14-46-42.png)  
 θ1 and θ2 tend to be around 0.12 and 250 respectively. Plotting those values on our graph to the right seems to put our point in the center of the inner most 'circle'. 
