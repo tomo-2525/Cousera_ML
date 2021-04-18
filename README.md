@@ -11,8 +11,9 @@
             - [Machine Learning difinition:](#machine-learning-difinition)
             - [Supervised Learning (教師あり学習)](#supervised-learning-教師あり学習)
             - [Unsupervised Learning (教師なし学習)](#unsupervised-learning-教師なし学習)
-    - [Linear Regression with One Variable](#linear-regression-with-one-variable)
-        - [Model and Cost Function](#model-and-cost-function)
+    - [Linear Regression with One Variable (線形回帰,線形回帰)](#linear-regression-with-one-variable-線形回帰線形回帰)
+        - [この講義で用いられる用語](#この講義で用いられる用語)
+        - [Model and Cost Function(目的関数)](#model-and-cost-function目的関数)
         - [Parameter Learning](#parameter-learning)
     - [Linear Algebra Review](#linear-algebra-review)
 - [WEEK 2](#week-2)
@@ -113,11 +114,27 @@ right answers 'not' given
 
 * Non-clustering: The "Cocktail Party Algorithm", allows you to find structure in a chaotic environment. (i.e. identifying individual voices and music from a mesh of sounds at a cocktail party).
 
-<a id="markdown-linear-regression-with-one-variable" name="linear-regression-with-one-variable"></a>
-## Linear Regression with One Variable
-<a id="markdown-model-and-cost-function" name="model-and-cost-function"></a>
-### Model and Cost Function
-ここから
+<a id="markdown-linear-regression-with-one-variable-線形回帰線形回帰" name="linear-regression-with-one-variable-線形回帰線形回帰"></a>
+## Linear Regression with One Variable (線形回帰,線形回帰)
+<a id="markdown-この講義で用いられる用語" name="この講義で用いられる用語"></a>
+### この講義で用いられる用語
+![](./img/README_2021-04-18-13-53-07.png) 
+ 
+<a id="markdown-model-and-cost-function目的関数" name="model-and-cost-function目的関数"></a>
+### Model and Cost Function(目的関数)
+![](./img/README_2021-04-18-14-00-23.png)  
+When the target variable that we’re trying to predict is continuous, such as in our housing example, we call the learning problem a regression problem. When y can take on only a small number of discrete values (such as if, given the living area, we wanted to predict if a dwelling is a house or an apartment, say), we call it a classification problem.  
+Hypothesis Function(仮説関数):yの値を予想してくれる関数のこと。  
+![](./img/README_2021-04-18-14-02-33.png)  
+
+Cost Function(目的関数):h(x)とyの差の2乗の平均を2で割ったもの0に近づくほど仮説関数が正確に予測できている。  この目的関数は、2乗誤差関数と呼ばれる
+![](./img/README_2021-04-18-14-04-20.png)  
+
+仮説関数と目的関数の関係 
+![](./img/README_2021-04-18-14-26-14.png)  
+
+
+
 <a id="markdown-parameter-learning" name="parameter-learning"></a>
 ### Parameter Learning
 
