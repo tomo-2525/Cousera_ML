@@ -125,9 +125,9 @@ right answers 'not' given
 ![](./img/README_2021-04-18-14-00-23.png)  
 When the target variable that we’re trying to predict is continuous, such as in our housing example, we call the learning problem a regression problem. When y can take on only a small number of discrete values (such as if, given the living area, we wanted to predict if a dwelling is a house or an apartment, say), we call it a classification problem.  
 Hypothesis Function(仮説関数):yの値を予想してくれる関数のこと。  
-![](./img/README_2021-04-18-14-02-33.png)  
+![](./img/README_2021-04-18-14-29-12.png)
 
-Cost Function(目的関数):h(x)とyの差の2乗の平均を2で割ったもの0に近づくほど仮説関数が正確に予測できている。  この目的関数は、2乗誤差関数と呼ばれる
+Cost Function(目的関数):h(x)とyの差の2乗の平均を2で割ったもの0に近づくほど仮説関数が正確に予測できている。この目的関数は、2乗誤差関数と呼ばれる
 ![](./img/README_2021-04-18-14-04-20.png)  
 
 仮説関数と目的関数の関係 
