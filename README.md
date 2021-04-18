@@ -180,7 +180,7 @@ A_23 = A(2,3)
 ```
 出力  
 ![](./img/README_2021-04-18-16-50-47.png)  
----
+***
 program
 ``` Octave
 % Initialize matrix A and B 
@@ -207,7 +207,7 @@ add_As = A + s
 ```
 出力  
 ![](./img/README_2021-04-18-16-56-04.png)  
----
+***
 program
 ``` Octave
 % Initialize matrix A 
@@ -221,7 +221,7 @@ Av = A * v
 ```
 出力  
 ![](./img/README_2021-04-18-16-57-49.png)  
----
+***
 program
 ``` Octave
 % Initialize a 3 by 2 matrix 
@@ -237,7 +237,7 @@ mult_AB = A*B
 ```
 出力  
 ![](./img/README_2021-04-18-16-59-15.png)  
----
+***
 program
 ``` Octave
 % Initialize random matrices A and B 
@@ -263,9 +263,9 @@ BA = B*A
 
 % Note that IA = AI but AB != BA
 ```
-出力
+出力  
 ![](./img/README_2021-04-18-17-00-36.png)  
----
+***
 program
 ``` Octave
 % Initialize matrix A 
@@ -280,7 +280,7 @@ A_inv = inv(A)
 % What is A^(-1)*A? 
 A_invA = inv(A)*A
 ```
-出力
+出力  
 ![](./img/README_2021-04-18-17-01-26.png)  
 
 <a id="markdown-week-2" name="week-2"></a>
