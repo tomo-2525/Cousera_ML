@@ -14,6 +14,8 @@
     - [Linear Regression with One Variable (線形回帰,線形回帰)](#linear-regression-with-one-variable-線形回帰線形回帰)
         - [Model and Cost Function(目的関数)](#model-and-cost-function目的関数)
         - [Parameter Learning](#parameter-learning)
+            - [Gradient decent](#gradient-decent)
+            - [Gradient decentの動き](#gradient-decentの動き)
     - [Linear Algebra Review](#linear-algebra-review)
 - [WEEK 2](#week-2)
     - [Linear Regression with Multiple Variables](#linear-regression-with-multiple-variables)
@@ -128,15 +130,33 @@ When the target variable that we’re trying to predict is continuous, such as i
 * Cost Function(目的関数):h(x)とyの差の2乗の平均を2で割ったもの0に近づくほど仮説関数が正確に予測できている。この目的関数は、2乗誤差関数と呼ばれる  
 ![](./img/README_2021-04-18-14-04-20.png)  
 
-* 仮説関数と目的関数の関係(分かりやすくするために仮説関数のパラメーターを一つにした)  
+* 仮説関数と目的関数の関係(仮説関数のパラメーターが1つの場合(分かりやすくするため))  
 ![](./img/README_2021-04-18-14-26-14.png)  
-パラメーターが2つの場合  
+* 仮説関数と目的関数の関係(パラメーターが2つの場合)  
 ![](./img/README_2021-04-18-14-29-12.png)  
 ![](./img/README_2021-04-18-14-46-42.png)  
 θ1 and θ2 tend to be around 0.12 and 250 respectively. Plotting those values on our graph to the right seems to put our point in the center of the inner most 'circle'. 
 
 <a id="markdown-parameter-learning" name="parameter-learning"></a>
 ### Parameter Learning
+<a id="markdown-gradient-decent" name="gradient-decent"></a>
+#### Gradient decent
+Gradient decent(最急降下法,勾配降下法)というアルゴリズムを用いて目的化関数を最小化(θの更新)する。（線形回帰以外でも使われる）  
+![](./img/README_2021-04-18-15-15-55.png)  
+![](./img/README_2021-04-18-15-28-01.png)  
+![](./img/README_2021-04-18-15-22-36.png)  
+
+最急降下法を始める場所(θの初期値)によって局所的最小値が異なる  
+θの更新は同時に行う  
+α:学習率（αが大きすぎると 大きなステップで降下し収束しない、小さすぎると時間がかかる）  
+最小値に近づくにつれ、偏微分の値が小さくなるので、αの更新の必要はない
+![](./img/README_2021-04-18-15-57-37.png)  
+
+<a id="markdown-gradient-decentの動き" name="gradient-decentの動き"></a>
+#### Gradient decentの動き
+![](./img/README_2021-04-18-15-52-21.png)  
+
+
 
 <a id="markdown-linear-algebra-review" name="linear-algebra-review"></a>
 ## Linear Algebra Review
